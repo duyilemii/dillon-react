@@ -13,6 +13,9 @@ export default function NavBar() {
         <li><NavLink to="/voting">Voting</NavLink></li>
         <li><a href="#donate" id="nav-donate-link">Donate</a></li>
       </ul>
+      <div className="hamburger">
+        ☰
+      </div>
     </div>
   );
 }

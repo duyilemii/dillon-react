@@ -36,7 +36,7 @@ export default function Home() {
 
       <section className="about-john">
         <div className="about-john-text">
-          <h1><div></div>A different kind of Democrat.</h1>
+          <h1>A different kind of Democrat.</h1>
           <p>
             John doesn’t look like a typical politician, 
             and more importantly, he doesn’t act like one. 
@@ -86,10 +86,10 @@ export default function Home() {
       </section>
 
 
-      <section className="about-john about-jon-family">
+      <section className="about-john about-john-family">
         <div className="about-john-image john-family-image"></div>
         <div className="about-john-text">
-          <h1><div></div>What John stands for</h1>
+          <h1>What John stands for</h1>
           <p>
             You'll always know exactly where I stand. 
             I haven't had to 'evolve' on the issues, 

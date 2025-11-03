@@ -102,6 +102,86 @@ html,body,#root {
 }
 
 
+@media (max-width: 1120px){
+   .donation-title{
+        font-size: 2rem;
+        line-height: 100%;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 768px) {
+    .donation-banner {
+        height: fit-content;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background-color: #ffc632;
+        color: black;
+        z-index: 20; /* above nav while visible */
+        pointer-events: auto;
+        width: 100%;
+    }
+
+    .donation-inner{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.5rem 0;
+    }
+
+    .donation-text{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 0.5rem;
+    }
+
+    .donation-title{
+        font-size: 2.1rem;
+        line-height: 100%;
+        font-weight: 700;
+    }
+
+    .donation-sub{
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .donation-actions{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        gap: 0.3rem;
+    }
+
+    .donation-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .donation-buttons button{
+        padding: 1.5rem 1rem;
+        width: 48%;
+        border: none;
+        color: black;
+        font-weight: 800;
+        font-family: Urbanist;
+        font-size: 1rem;
+    }
+
+    .donation-actions p{
+        font-size: 0.7rem;
+        text-align: center;
+    }
+}
+
+
 
 
 
@@ -118,6 +198,7 @@ html,body,#root {
     background-color: transparent;
 }
 
+
 .nav-bar ul{
     display: flex;
     list-style-type: none;
@@ -129,6 +210,31 @@ html,body,#root {
 .nav-bar h1{
     color: white;
     font-size: 6rem;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .header-nav-bar {
+        padding: 1rem 1.5rem;
+    }
+    
+    .hamburger{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* width: 3rem;
+        height: 3rem; */
+        color: white;
+        font-size: 3rem;
+    }
+
+
+    .nav-bar ul{
+        display: none;
+    }
 }
 
 
@@ -173,10 +279,10 @@ html,body,#root {
     height: 29rem;
 }
 
-.lead { 
+/* .lead { 
     font-size:18px; 
     opacity:.9; 
-}
+} */
 
 .hero-form{
     display: flex;
@@ -261,6 +367,42 @@ html,body,#root {
 }
 
 
+@media (max-width: 768px){
+    .hero.home-hero { 
+        height: fit-content; 
+        flex-direction:column;  
+        padding: 1.5rem; 
+   }
+    
+    .hero-inner { 
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .hero-image{
+        width: 100%;
+    }
+
+    .hero-form{
+        width: 100%;
+    }
+
+    .hero-form h1{
+        font-size: 3rem;
+    }
+
+    .hero-form input{
+        width: 100%;
+    }
+
+    .hero-form #zip-code{
+    width: 100%;
+    }
+}
+
+
+
 
 
 
@@ -323,6 +465,47 @@ html,body,#root {
 }
 
 
+@media (max-width: 768px){
+    .about-john{
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    .about-john-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about-john-image{
+        width: 100%;
+        height: 21rem;
+    }
+
+    .about-john-text h1{
+        font-size: 3rem;
+    }
+
+    .about-john-text h1 div{
+        width: 9rem;
+        left: 15.5rem;
+        top: 4.8rem;
+    }
+
+    .about-john-text p{
+        font-size: 1.3rem;
+    }
+
+    .about-john-text a{
+        font-size: 1.3rem;
+    }
+}
+
+
 
 
 
@@ -353,6 +536,7 @@ html,body,#root {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .get-involved-cards div{
@@ -405,13 +589,43 @@ html,body,#root {
 }
 
 
+@media (max-width: 768px){
+    .get-involved{
+        width: 100%;
+        gap: 1rem;
+        height: fit-content;
+        padding: 1.5rem;
+    }
+
+    .get-involved h1{
+        font-size: 3rem;
+    }
+
+    .get-involved-cards div{
+        width: 100%;
+        height: 18rem;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .text-to-join h2{
+        font-size: 2.4rem;
+    }
+
+    .text-to-join p{
+        font-size: 0.9rem;
+        width: 100%;
+    }
+}
 
 
 
 
 
 
-.about-jon-family .about-john-text{
+
+.about-john-family .about-john-text{
     width: 40%;
     color: white;
     display: flex;
@@ -424,6 +638,28 @@ html,body,#root {
     background-image: url(/public/fetterman-family.jpg);
     width: 41rem;
     height: 30rem;
+}
+
+@media (max-width: 768px){
+    .john-family-image{
+        width: 100%;
+        height: 21rem;
+    }
+
+    .about-john-family .about-john-text{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .about-john-text h1{
+        font-size: 2.1rem;
+    }
+
+    .about-john-text h1 div{
+        width: 5.7rem;
+        left: 21rem;
+        top: 1.05rem;
+    }
 }
 
 
@@ -488,6 +724,38 @@ html,body,#root {
     text-underline-offset: 0.5rem;
     font-size: 1.2rem;
     font-weight: 800;
+}
+
+@media (max-width: 768px){
+    .the-news{
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .the-news h3{
+        font-size: 2.1rem;
+        gap: 0.5rem;
+        margin-right: auto;
+    }
+
+    .news-cards{
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.4rem;
+    }
+
+    .news-cards div{
+        width: 100%;
+        gap: 0.6rem;
+    }
+
+    .news-cards p{
+        font-size: 1.2rem;
+    }
+
+    .the-news a{
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -556,13 +824,53 @@ html,body,#root {
 }
 
 
+@media (max-width: 768px){
+    .join-campaign{
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .join-campaign-text{
+        gap: 1.5rem;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .join-campaign-text h1{
+        font-size: 3rem;
+    }
+
+
+    .join-campaign .input-container{
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 12rem;
+    }
+
+    .join-campaign .input-container input{
+        width: 100%;
+    }
+
+    #zip-code{
+        width: 100%;
+    }
+
+    .join-campaign .input-container p{
+        margin-bottom: 0.5rem;
+    }
+}
+
 
 
 
 
 .chip-in{
     position: absolute;
-    /* opacity: 0; */
     width: 72%;
     height: 14rem;
     bottom: -7rem;
@@ -598,6 +906,45 @@ html,body,#root {
 .chip-in-inner button{
     width: 30%;
     padding: 1rem 0.1rem;
+}
+
+
+@media (max-width: 768px){
+    .chip-in{
+        height: fit-content;
+        position: absolute;
+        width: 88%;
+        bottom: -9rem;
+        padding: 0 1.5rem;
+    }
+
+    .chip-in-inner{
+        gap: 1rem;
+    }
+
+    .chip-in-inner .donation-text{
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .chip-in-inner .donation-text strong{
+        font-size: 1.8rem;
+    }
+
+    .chip-in-inner .donation-text div{
+        font-size: 1.2rem;
+    }  
+
+    .chip-in-inner .donation-actions{
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .chip-in-inner button{
+        width: 31%;
+        padding: 1rem 0.5rem;
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -666,6 +1013,73 @@ html,body,#root {
     border: 0.1rem solid white;
     color: white;
 }
+
+
+@media (max-width: 768px){
+    .footer{
+        height: fit-content;
+        padding: 12rem 1.5rem 1.5rem 1.5rem;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer div{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    .footer ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 1rem;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    .nav-bar h1{
+        border: 0.3rem solid white;
+        padding: 0.3rem 0.6rem;
+        font-weight: 900;
+        font-size: 1.8rem;
+    }
+
+    .nav-bar a{
+        color: white;
+        text-decoration: none;
+    }
+
+    #nav-donate-link{
+        padding: 0.3rem 1rem;
+        border: 0.1rem solid #ffc632;
+        color: #ffc632;
+    }
+
+    .donate-socials h5{
+        margin-bottom: auto;
+        font-size: 1rem;
+    }
+
+    .donate-socials .footer-donate-by-mail{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer-last-div h5{
+        font-size: 0.9rem;
+        padding: 0.5rem 1.5rem;
+        border: 0.1rem solid white;
+        color: white;
+    }
+}
+
+
+
+
+
+
 
 
 
