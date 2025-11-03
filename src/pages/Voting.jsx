@@ -89,6 +89,8 @@ export default function Voting() {
             <button>More Information</button>
           </div>
 
+
+
           <div className="voting-details-5">
             <h2>In Person Voting on Tuesday, November 8</h2>
             <p>
@@ -103,6 +105,8 @@ export default function Voting() {
             </p>
             <button>Find Your Polling Place</button>
           </div>
+
+
 
           <div className="voting-details-6">
             <h2>Voter Registration</h2>
