@@ -1,1 +1,0 @@
-import{r as e,j as s}from"./index-CVjhf2_5.js";function n(){return e.useEffect(()=>{document.title="Events — Dillon Campaign"},[]),s.jsxs("section",{className:"events-section",children:[s.jsxs("h1",{children:[s.jsx("div",{}),"Events"]}),s.jsx("h1",{children:"COMING SOON"})]})}export{n as default};
