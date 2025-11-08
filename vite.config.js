@@ -6,11 +6,20 @@
 //   plugins: [react()],
 // })
 
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+// import { defineConfig } from 'vite'
+// import react from '@vitejs/plugin-react'
 
-// replace 'dillon-react' with your repo name if different
+// // replace 'dillon-react' with your repo name if different
+// export default defineConfig({
+//   base: '/dillon-react/',
+//   plugins: [react()],
+// })
+
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
 export default defineConfig({
-  base: '/dillon-react/',
+  base: "/dillon-react/",
   plugins: [react()],
-})
+});
+

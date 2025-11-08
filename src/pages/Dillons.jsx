@@ -1,4 +1,8 @@
 import React, { useEffect } from "react";
+import giseleFetterman from '../assets/gisele-fetterman.jpg';
+import leviFetterman from '../assets/levi-fetterman.jpg';
+import johnFetterman from '../assets/homepage-introblock-min.webp';
+
 
 export default function Dillons() {
   useEffect(() => {
@@ -10,7 +14,7 @@ export default function Dillons() {
       <h1><div></div>Meet the Dillons</h1>
       <div className="the-dillons">
         <div>
-          <img src="/homepage-introblock-min.webp" alt="" />
+          <img src={johnFetterman} alt="" />
           <h3>John Dillon</h3>
           <p>
             20 years ago, John came to Braddock to start a 
@@ -27,7 +31,7 @@ export default function Dillons() {
         </div> 
 
         <div>
-          <img src="/gisele-fetterman.jpg" alt="" />
+          <img src={giseleFetterman} alt="" />
           <h3>Gisele Dillon</h3>
           <p>
             20 years ago, John came to Braddock to start a 
@@ -44,7 +48,7 @@ export default function Dillons() {
         </div> 
 
         <div>
-          <img src="/levi-fetterman.jpg" alt="" />
+          <img src={leviFetterman} alt="" />
           <h3>Levi Dillon</h3>
           <p>
             20 years ago, John came to Braddock to start a 
